@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+:root {
+    --purple-color: rgba(255, 168, 255, 1);
+}
+body{ 
+    
+    margin: 0;
+    overflow-x: hidden;
+    font-family: raleway;
+}
+
+#aash{
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    
+}
+
+#home{
+    display: flex;
+    gap: 70px;
+    margin-left: 112px;
+
+}
+a{ 
+    color: var(--purple-color);
+    text-decoration: none;
+}
+main {
+    background: url(assets/bg.png);
+    height: 100vh;
+    width: 100%;
+}
+
+#navRight {
+    display: flex;
+    gap: 25px;
+}
+
+#navRight button {
+    border: 1px solid var(--purple-color);
+    background-color: transparent;
+    color: var(--purple-color);
+    font-size: large;
+}
+
+nav {
+    padding: 15px 25px;
+}
+
+p,
+header {
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    display: flex;
+
+    align-items: center;
+    gap: 50px;
+}
+
+.login button {
+    width: 100px;
+    outline: none;
+    border: none;
+    height: 28px;
+    background-color: rgba(255, 168, 255, 1);
+
+    ;
+}
+
+.content {
+    position: absolute;
+    padding-left: 270px;
+    padding-top: 135px;
+    /* padding-bottom: ; */
+    width: 420px;
+}
+
+section {
+    /* height: 100vh; */
+    padding: 0 10%;
+    background-color: rgb(27,27,27);
+    line-height: 29.35px;
+    margin: 0;
+}
+
+.megicula .img, .atredis .img {
+    width: 50%;
+}
+.megicula img {
+    width: 75%;
+}
+.megicula .sectionText, .atredis .sectionText{
+    width: 60%;
+}
+.megicula header h2, .atredis header h2{
+    font-size: 4rem;
+}
+.atredis { 
+    padding: 50px 10%;
+}
+
+/* footer */
+footer{ 
+    background: rgba(33, 33, 33, 1);
+    height: 100%;
+    color: white;
+    padding: 1% 5%;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.socials {
+    width: 75%;
+}
+footer header{ 
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+.footerMainLeft {
+    width: 30%;
+}
+.footerMainLeft h3{ 
+    font-size: 2rem;
+    font-weight: 700;
+}
+.footerMainRight{ 
+    width: 30%;
+}
+.footerMainRight{
+    height: 100%;
+}
+.footerMainRight ul .footerListItem1{ 
+    font-size: 2rem;
+    color: white;
+}
+.footerMainRight ul li {
+    color: rgb(86, 86, 86);
+}
+.footerMainRight ul {
+    gap: 5px;
+}
