@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
 :root {
-    --purple-color: rgba(255, 168, 255, 1);
+    --purple-color: rgba(142, 146, 255, 1);
+    /* --purple-color: rgba(255, 168, 255, 1); */
+    --footer-bg: #0D0139;
+    --section-bg: #09002A;
+
+    --font-color: rgba(142, 146, 255, 1);
+
+
+
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -46,9 +55,14 @@ body{
 a{ 
     color: var(--purple-color);
     text-decoration: none;
+    transition: 256ms;
+}
+a:hover{ 
+    border-bottom: 3px solid white;
 }
 main {
-    background: url(assets/backg.svg);
+    /* background: ; */
+    background: linear-gradient(180deg, #08002A 0%, rgba(8, 0, 42, 0) 59.55%, #09002A 100%) , url(assets/backg.svg);
     height: 100vh;
     width: 100%;
 }
@@ -64,6 +78,9 @@ main {
     color: var(--purple-color);
     font-size: large;
 }
+#navRight button:hover, #navRight img:hover{ 
+    cursor: pointer;
+}
 
 nav {
     padding: 2% 5%;
@@ -72,7 +89,12 @@ nav {
 p,
 header {
     color: white;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: "Modern Antiqua";
+}
+#about p {
+    font-weight: 500;
+
 }
 
 .login {
@@ -87,9 +109,18 @@ header {
     outline: none;
     border: none;
     height: 28px;
-    background-color: rgba(255, 168, 255, 1);
+    background-color: var(--font-color);
+    transition: 456ms;
+}
+.login p {
+    transition: 456ms;
 
-    ;
+}
+
+.login button:hover , .login p:hover{ 
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.1);
+    /* transform: ; */
 }
 
 .content {
@@ -103,9 +134,12 @@ header {
 section {
     /* height: 100vh; */
     padding: 0 10%;
-    background-color: rgb(27,27,27);
+    background: var(--section-bg);
+    /* background-color: #09002A; */
     line-height: 29.35px;
     margin: 0;
+    scroll-snap-type: proximity;
+    scroll-snap-align: center;
 }
 
 .megicula .img, .atredis .img {
@@ -126,10 +160,10 @@ section {
 
 /* footer */
 footer{ 
-    background: rgba(33, 33, 33, 1);
+    background: var(--footer-bg);
     height: 100%;
     color: white;
-    padding: 1% 5%;
+    padding: 2% 5%;
 }
 footer ul {
     margin: 0;
@@ -160,6 +194,7 @@ footer header{
 .footerMainRight ul .footerListItem1{ 
     font-size: 2rem;
     color: white;
+    font-weight: 500;
 }
 .footerMainRight ul li {
     color: white;
@@ -167,8 +202,4 @@ footer header{
 }
 .footerMainRight .footerList {
     gap: 15px;
-}
-
-.footerListItem1{
-    font-weight: 700;
 }
