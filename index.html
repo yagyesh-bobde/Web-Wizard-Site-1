@@ -8,7 +8,7 @@
     <title>Web Wizard✨</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body >
     <main id="main" >
@@ -46,14 +46,14 @@
         </div>
     </main>
     <section class="megicula flex flex-center">
-        <div class="img">
-            <img src="./assets/Group.svg" alt="">
+        <div data-aos="slide-right" class="img">
+            <img src="./assets/left.png" alt="">
         </div>
         <div class="sectionText flex flex-col flex-center" >
-            <header class="sectionTitle">
+            <header data-aos="slide-right" class="sectionTitle">
                 <h2>The Orb of Megicula</h2>
             </header>
-            <p>
+            <p data-aos="zoom-in" data-delay="1000">
                 Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling. Berån pott.
                 Benade pres yn.
                 Sor kvasikilig i trav. Lan kvasilögisk. Pomyligen bissa sede yrar gigasm. Ysade fenade kawaii. Prelig ode, monogt serar.
@@ -68,15 +68,15 @@
     </section>
 
     <section class="atredis flex flex-center flex-row-rev">
-        <div class="img flex flex-center">
-            <img src="./assets/0.svg"
+        <div data-aos="slide-left" class="img flex flex-center">
+            <img src="./assets/right.png"
                     alt="">
         </div>
         <div class="sectionText flex flex-col flex-center">
-            <header class="sectionTitle">
+            <header data-aos="slide-left" class="sectionTitle">
                 <h2>The Orb of Atredis</h2>
             </header>
-            <p>
+            <p data-aos="zoom-in" data-delay="1000" >
                 Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling.
                 Berån pott.
                 Benade pres yn.
@@ -140,6 +140,9 @@
                         About
                     </li>
                     <li>
+                        Our Staff
+                    </li>
+                    <li>
                         Timeline
                     </li>
                     <li>
@@ -149,7 +152,7 @@
                         Brand Kit
                     </li>
                 </ul>
-                <ul class="footerList">
+                <ul class="footerList flex flex-col">
                     <li class="footerListItem1">
                         Services
                     </li>
@@ -163,7 +166,7 @@
                         Three
                     </li>
                 </ul>
-                <ul class="footerList">
+                <ul class="footerList flex flex-col">
                     <li class="footerListItem1">
                         Other
                     </li>
@@ -177,5 +180,9 @@
             </div>
         </div>
     </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
