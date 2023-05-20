@@ -1,0 +1,21 @@
+body{
+    font-family:'Raleway';
+    color:#8E92FF;
+}
+.x{
+    font-size: 20px;
+}
+.b{ 
+    
+    background-image: url("Group (1).png");
+    background-size: contain;
+    width: 100vw;
+
+}
+.a{
+    font-size: 45px;
+}
+.c{
+    text-align: right;
+}
+

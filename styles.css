@@ -33,7 +33,6 @@
     background: #555;
 }
 body{ 
-    
     margin: 0;
     overflow-x: hidden;
     font-family: raleway;
@@ -175,7 +174,11 @@ section {
 .megicula .sectionText, .atredis .sectionText{
     width: 60%;
 }
-.megicula header h2, .atredis header h2{
+.megicula header h2{ 
+    font-size: 3.5rem;
+     width: 100%;   
+}
+ .atredis header h2{
     font-size: 4rem;
 }
 .atredis { 
@@ -196,6 +199,9 @@ footer ul {
 }
 .socials {
     width: 75%;
+}
+.socials li {
+    cursor: pointer;
 }
 footer header{ 
     margin: 0;
@@ -226,4 +232,65 @@ footer header{
 }
 .footerMainRight .footerList {
     gap: 15px;
+}
+
+.atredis .img{ 
+    height: 100%;
+}
+
+@media screen and (max-width: 1180px){
+    .footerMainRight {
+            width: 50%;
+    }
+}
+
+@media screen and (max-width: 818px){
+   #aboutUs{ 
+
+   }
+   #aboutUs h2,.atredis h2{ 
+    line-height: 3rem;
+    }   
+    .atredis img{ 
+        width: 75%;
+    }
+    .sectionText p{ 
+        font-size: small;
+    }
+    .sectionText header h2{ 
+        font-size: 2rem ;
+    }
+
+}
+
+@media screen and (max-width: 675px){ 
+    footer .footerMain {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    footer .footerMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footerMain .footerMainLeft,
+    footer .footerMain .footerMainRight{ 
+        width: 100%;
+    }
+    footer .footerMain .footerMainLeft h3{ 
+        text-align: center;
+    }
+    footer .footerMain .footerMainLeft .socials{ 
+        width: 75%;
+        margin: 5% auto;
+    }
+}
+
+@media screen and (max-width:580px) {
+    #aash #navRight{
+        display: none;
+    }
+    #aash #home{ 
+        width: 100%;
+    }
 }

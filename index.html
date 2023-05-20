@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./script/script.js"></script>
+        <link rel="preconnect"
+              href="https://fonts.googleapis.com" />
+        <link rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Philosopher&family=Raleway:wght@100;300&display=swap"
+              rel="stylesheet" />
+              <link rel="stylesheet" href="contact.css">
 </head>
 <body >
     <main id="main" >
@@ -16,15 +25,15 @@
             <div id="home">
                 <a href="#">Home</a>
                 <a href="#aboutUs">About</a>
-                <a href="#footer">Contact</a>
+                <a href="#contact">Contact</a>
                 <a href="#footer">Support</a>
             </div>
-            <div id="navRight" onclick="" >
+            <div id="navRight" onclick="navigatelogin()" >
                 <button>Sign up</button>
                 <img src="./assets/profileIcon.svg" alt="">
             </div>
         </nav>
-
+        
         <!-- <div class="navDrawer flex flex-col ">
             <ul id="drawerUp" class="flex flex-col items-center">
                 <li><a href="#">Home</a></li>
@@ -43,28 +52,28 @@
             </div>
         </div> -->
 
-        <div id="about" class="content">
-            <div class="aboutContent">
-<header style="font-size:4rem;">
-    Lörem ipsum mer ultrask
-</header>
-<p style="font-size:x-large;">
-    Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Prelig ode, monogt serar.
-    Hoholedes
-</p>
-<div class="login">
-    <button>
-        Login
-        <img src="./assets/playblack.png"
-             alt="">
-    </button>
-    <p>
-        More
-        <img style="margin: 0 5px;"
-             src="./assets/playwhite.png"
-             alt="">
+<div id="about" class="content">
+<div class="aboutContent" data-aos="zoom-in" data-aos-duration="1000">
+    <header style="font-size:4rem;">
+        Lörem ipsum mer ultrask
+    </header>
+    <p style="font-size:x-large;">
+        Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Prelig ode, monogt serar.
+        Hoholedes
     </p>
-</div>
+    <div class="login">
+        <button>
+            Login
+            <img src="./assets/playblack.png"
+                alt="">
+        </button>
+        <p>
+            More
+            <img style="margin: 0 5px;"
+                src="./assets/playwhite.png"
+                alt="">
+        </p>
+    </div>
             </div>
             
         </div>
@@ -96,8 +105,8 @@
             <img src="./assets/right.png"
                     alt="">
         </div>
-        <div class="sectionText flex flex-col flex-center">
-            <header data-aos="slide-left" class="sectionTitle">
+        <div data-aos="slide-left"  class="sectionText flex flex-col flex-center">
+            <header class="sectionTitle">
                 <h2>The Orb of Atredis</h2>
             </header>
             <p data-aos="zoom-in" data-delay="1000" >
@@ -118,6 +127,35 @@
             </p>
         </div>
     </section>
+
+    <div id="contact" class="container">
+        <h1>Contact Us</h1>
+        <form action="#"
+              method="POST">
+            <label for="name">Name</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Your name.."
+                   required>
+    
+            <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Your email.."
+                   required>
+    
+            <label for="message">Message</label>
+            <textarea id="message"
+                      name="message"
+                      placeholder="Write something.."
+                      required></textarea>
+    
+            <input type="submit"
+                   value="Submit">
+        </form>
+    </div>
 
     <footer id="footer" class="footer">
         <header>
@@ -203,6 +241,7 @@
                 </ul>
             </div>
         </div>
+        
     </footer>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
