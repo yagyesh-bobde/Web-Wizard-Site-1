@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A site for web wizard workshop organized by GDSC RCOEM.">
-    <title>Web Wizard✨</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="./script/script.js"></script>
+    <title>Web Wizard ✨</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <link rel="preconnect"
               href="https://fonts.googleapis.com" />
         <link rel="preconnect"
@@ -17,236 +13,65 @@
               crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Philosopher&family=Raleway:wght@100;300&display=swap"
               rel="stylesheet" />
-              <link rel="stylesheet" href="contact.css">
+    <style>
+        body{ 
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Philosopher;
+        }
+        #videoText3 {
+            --bg-size: 400%;
+            --color-one: hsl(15 90% 55%);
+            --color-two: hsl(40 95% 55%);
+            font-size: 5rem;
+            /* padding: 0 50px; */
+            text-align: center;
+            /* color: rgba(142, 146, 255, 1); */
+            color: white;
+            /* background: linear-gradient(
+                        90deg,
+                        rgba(142, 146, 255, 1),
+                        var(--color-two),
+                        rgba(142, 146, 255, 1)
+                      ) 0 0 / var(--bg-size) 100%;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text; */
+        font-weight: 800;
+        animation: move-bg 8s infinite linear;
+        /* backdrop-filter: blur(14px) saturate(180%); */
+        
+        font-family: Philosopher;
+        }
+
+        
+    </style>
 </head>
-<body >
-    <main id="main" >
-        <nav id="aash">
-            <div id="home">
-                <a href="#">Home</a>
-                <a href="#aboutUs">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#footer">Support</a>
-                <a href="team.html">Team</a>
-            </div>
-            <div id="navRight" onclick="navigatelogin()" >
-                <button>Sign up</button>
-                <img src="./assets/profileIcon.svg" alt="">
-            </div>
-        </nav>
-        
-        <!-- <div class="navDrawer flex flex-col ">
-            <ul id="drawerUp" class="flex flex-col items-center">
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutUs">About</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><a href="#footer">Support</a></li>
-            </ul>
-            <div id="drawerDown "
-                class="flex flex-col items-center"
-                    onclick="">
-                <button>Sign up</button>
-                <div>
-                    <img src="./assets/profileIcon.svg"
-                            alt="">
-                </div>
-            </div>
-        </div> -->
-
-<div id="about" class="content">
-<div class="aboutContent" data-aos="zoom-in" data-aos-duration="1000">
-    <header style="font-size:4rem;">
-        Lörem ipsum mer ultrask
-    </header>
-    <p style="font-size:x-large;">
-        Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Prelig ode, monogt serar.
-        Hoholedes
-    </p>
-    <div class="login">
-        <button>
-            Login
-            <img src="./assets/playblack.png"
-                alt="">
-        </button>
-        <p>
-            More
-            <img style="margin: 0 5px;"
-                src="./assets/playwhite.png"
-                alt="">
-        </p>
-    </div>
-            </div>
-            
-        </div>
-    </main>
-    <section id="aboutUs" class="megicula flex flex-center">
-        <div data-aos="slide-right" class="img">
-            <img src="./assets/left.png" alt="">
-        </div>
-        <div class="sectionText flex flex-col flex-center" >
-            <header data-aos="slide-right" class="sectionTitle">
-                <h2>The Orb of Megicula</h2>
-            </header>
-            <p data-aos="zoom-in" data-delay="1000">
-                Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling. Berån pott.
-                Benade pres yn.
-                Sor kvasikilig i trav. Lan kvasilögisk. Pomyligen bissa sede yrar gigasm. Ysade fenade kawaii. Prelig ode, monogt serar.
-                Hoholedes hypomöment medan kartad polågen mikrotiktigt. Dende veganisera är vinas bästsäljerism. Skynka igisk mar om
-                bemeliga lande. Misa trende plalelingar merade dekas. Regt tylåligen eftersom bede.
-                Fibes fydogt fide men låren. Episkap preskapet synlogi mjuta. Mobilvirus förstärkt verklighet var trira. Terana deng i
-                syfon mövörade plal. Lål pelör der plamosade, att jijibäling.
-                Nelig famod i ont. Beving lokator tevis det vill säga spefodat. Dyledes dor ektig tesa: tigt. Virunade nese, fast
-                kontralåbel.
-            </p>
-        </div>
-    </section>
-
-    <section class="atredis flex flex-center flex-row-rev">
-        <div data-aos="slide-left" class="img flex flex-center">
-            <img src="./assets/right.png"
-                    alt="">
-        </div>
-        <div data-aos="slide-left"  class="sectionText flex flex-col flex-center">
-            <header class="sectionTitle">
-                <h2>The Orb of Atredis</h2>
-            </header>
-            <p data-aos="zoom-in" data-delay="1000" >
-                Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling.
-                Berån pott.
-                Benade pres yn.
-                Sor kvasikilig i trav. Lan kvasilögisk. Pomyligen bissa sede yrar gigasm. Ysade fenade kawaii. Prelig ode,
-                monogt serar.
-                Hoholedes hypomöment medan kartad polågen mikrotiktigt. Dende veganisera är vinas bästsäljerism. Skynka
-                igisk mar om
-                bemeliga lande. Misa trende plalelingar merade dekas. Regt tylåligen eftersom bede.
-                Fibes fydogt fide men låren. Episkap preskapet synlogi mjuta. Mobilvirus förstärkt verklighet var trira.
-                Terana deng i
-                syfon mövörade plal. Lål pelör der plamosade, att jijibäling.
-                Nelig famod i ont. Beving lokator tevis det vill säga spefodat. Dyledes dor ektig tesa: tigt. Virunade nese,
-                fast
-                kontralåbel.
-            </p>
-        </div>
-    </section>
-
-    <div id="contact" class="container">
-        <h1>Contact Us</h1>
-        <form action="#"
-              method="POST">
-            <label for="name">Name</label>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   placeholder="Your name.."
-                   required>
+<body style="background: url(assets/loader.png);background-repeat: no-repeat; background-position: bottom;background-size: cover;">
+    <blockquote id="videoText3">
     
-            <label for="email">Email</label>
-            <input type="email"
-                   id="email"
-                   name="email"
-                   placeholder="Your email.."
-                   required>
-    
-            <label for="message">Message</label>
-            <textarea id="message"
-                      name="message"
-                      placeholder="Write something.."
-                      required></textarea>
-    
-            <input type="submit"
-                   value="Submit">
-        </form>
-    </div>
-
-    <footer id="footer" class="footer">
-        <header>
-            <h3>Gredric Shallowwater shop of wizardry antiques</h3>
-        </header>
-        <div class="footerMain flex justify-between items-center">
-            <div class="footerMainLeft">
-                <h3>Need Help?</h3>
-                <p class="footerText" >
-                    Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling. Berån pott.
-                    Benade pres yn.
-                    Sor kvasikilig i trav. Lan kvasilögisk.
-                </p>
-                <ul class="socials flex justify-between">
-                        <li>
-                            <img src="assets/socials/linkedin.png" alt="" srcset="">
-                        </li>
-                        <li>
-                            <img src="assets/socials/facebook.png"
-                                 alt=""
-                                 srcset="">
-                        </li>
-                        <li>
-                            <img src="assets/socials/github.png"
-                                 alt=""
-                                 srcset="">
-                        </li>
-                        <li>
-                            <img src="assets/socials/instagram.png"
-                                 alt=""
-                                 srcset="">
-                        </li>
-                        <li>
-                            <img src="assets/socials/twitter.png"
-                                 alt=""
-                                 srcset="">
-                        </li>
-
-                </ul>
-            </div>
-            <div class="footerMainRight flex justify-between">
-                <ul class="footerList flex flex-col">
-                    <li class="footerListItem1">
-                        About
-                    </li>
-                    <li>
-                        Our Staff
-                    </li>
-                    <li>
-                        Timeline
-                    </li>
-                    <li>
-                        Spell Books
-                    </li>
-                    <li>
-                        Brand Kit
-                    </li>
-                </ul>
-                <ul class="footerList flex flex-col">
-                    <li class="footerListItem1">
-                        Services
-                    </li>
-                    <li>
-                        One
-                    </li>
-                    <li>
-                        Two
-                    </li>
-                    <li>
-                        Three
-                    </li>
-                </ul>
-                <ul class="footerList flex flex-col">
-                    <li class="footerListItem1">
-                        Other
-                    </li>
-                    <li>
-                        One
-                    </li>
-                    <li>
-                        Two
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-    </footer>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    </blockquote>
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                window.location.pathname = '/'
+            }, 5000);
+        }
+        var app3 = document.getElementById('videoText3');
+        var typewriter = new Typewriter(app3, {
+            loop: true,
+            delay: 75,
+        });
+        typewriter
+        .typeString("Welcome,<br>")
+        .pauseFor(1000)
+        .typeString("To<br>")
+        .pauseFor(1000)
+        .typeString("<div style='backdrop-filter: blur(14px) saturate(180%); ' >Web Wizards</span>")
+        .pauseFor(10000)
+        .start()
+    </script>
 </body>
 </html>
