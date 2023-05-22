@@ -26,8 +26,8 @@ main nav{
 
 .allMembers .card {
     position: relative;
-    width: 350px;
-    height: 400px;
+    width: 375px;
+    height: 425px;
     background: rgba(255, 255, 255, 0.05);
     margin: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
